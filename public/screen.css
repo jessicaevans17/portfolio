@@ -7,11 +7,10 @@ html {
 }
 
 body {
-	/* margin-left: 13rem;
-	margin-right: 13rem; */
 	min-height: 100%;
 	font-family: 'Roboto', sans-serif;
 	background-color: black;
+	width: auto;
 }
 
 .flex-row {
@@ -45,8 +44,8 @@ header {
 }
 
 .header-title {
-	font-weight: 900;
-	font-size: 2rem;
+	margin-bottom: 0rem;
+	font-weight: 800;
 }
 
 figure > img {
@@ -158,6 +157,7 @@ footer {
 
 .twitter-ul {
 	align-items: center;
+	padding-left: 0rem;
 }
 
 .twitter-li {
@@ -170,4 +170,71 @@ footer {
 
 footer > p {
 	font-size: 0.75rem;
+}
+
+@media (min-width: 835px) and (max-width: 1034px) {
+	.box {
+		margin-right: 2rem;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 834px) {
+	.header-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 0rem;
+	}
+
+	figure > img {
+		margin-left: 0rem;
+		margin-top: 0rem;
+	}
+
+	.box {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		margin-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.speech-bubble:before {
+		display: none;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+	.header-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 0rem;
+	}
+
+	.header-ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	figure > img {
+		margin-left: 0rem;
+		margin-top: 0rem;
+		height: 10rem;
+	}
+
+	.box {
+		margin-left: 5rem;
+		margin-right: 5rem;
+		margin-top: 1rem;
+		padding-bottom: 2rem;
+	}
+
+	.speech-bubble:before {
+		display: none;
+	}
+
+	.li-disappear {
+		display: none;
+	}
 }
